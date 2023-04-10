@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+}
+
+@media screen and (max-width: 920px) {
+    .main-box {
+        background: rgb(255, 255, 255);
+        box-shadow: rgba(53, 18, 122, 0.498) 0px 50px 50px -20px;
+        border-radius: 23px;
+        width: 400px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .shadow-image-desktop {
+        display: none;
+    }
+
+    .image {
+        width: 237px;
+        margin-top: -210px;
+    }
+
+    .orange-block-image {
+        display: none;
+    }
+
+    h1 {
+        font-family: 'Kumbh Sans';
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+        color: #1E1F36;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-family: 'Kumbh Sans';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 17px;
+        color: #4B4C5F;
+        cursor: pointer;
+	    transition: color 0.25s;
+    }
+
+    h2:hover {
+        color: orange;
+    }
+
+    p {
+        font-family: 'Kumbh Sans';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #4B4C5F;
+    }
+   
+    .FAQ-div {
+        width: 279px;
+        margin-top: 50px;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .question-box{
+        margin-bottom: 15px;
+        margin-left: 14px;
+    }
+
+    .question {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: none;
+        background-color: #FFFFFF;
+        width: 340px
+    }
+
+    .answer {
+        display: none;
+    }
+
+    .answer-styles{
+        font-family: 'Kumbh Sans';
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 18px;
+        color: #787887;
+        margin-top: 10px;
+        display: block;
+    }
+
+    .arrow-button {
+        width: 10px;
+        height: 7px;
+        border: none;
+        background-color: white;
+        transform: rotate(0deg);
+        transition-duration: 0.5s;
+    }
+
+    .arrow-button.rotate {
+        transform: rotate(180deg);
+        transition-duration: 0.5s;
+    }
+
+    .line {
+        background: #E8E8EA;
+        width: 279px;
+        height: 1px;
+        margin-top: 18px;
+    }
+}
+
+@media screen and (min-width: 920px) {
+    .main-box {
+        background: #FFFFFF;
+        box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
+        border-radius: 23px;
+        width: 920px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .shadow-image-mobile {
+        display: none;
+    }
+
+    .shadow-image-desktop {
+        background-image: url("https://cdn.glitch.global/1f9490b8-d1f7-4bf0-9d6f-ece7cdd47681/bg-pattern-desktop.svg?v=1671188408891");
+        height: 509px;
+        width: 65%;
+        background-repeat: no-repeat;
+        background-position: 156% 70%;
+        margin-right: -300px;
+    }
+
+    .image {
+        display: none;
+    }
+
+    .image-div {
+        background-image: url("https://cdn.glitch.global/1f9490b8-d1f7-4bf0-9d6f-ece7cdd47681/illustration-woman-online-mobile.svg?v=1671188429359");
+        width: 470px;
+        height: 359px;
+        background-repeat: no-repeat;
+        position: absolute;
+        background-position: -82px ;
+    }
+
+    .orange-block-image {
+        position: relative;
+        left: -391px;
+        top: 45px;
+    }
+
+    h1 {
+        font-family: 'Kumbh Sans';
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+        color: #1E1F36;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-family: 'Kumbh Sans';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 17px;
+        color: #4B4C5F;
+        cursor: pointer;
+	    transition: color 0.25s;
+    }
+
+    h2:hover {
+        color: orange;
+    }
+
+    .question {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: none;
+        background-color: #FFFFFF;
+        width: 100%;
+    }
+
+    .answer {
+        display: none;
+        transition: 1s;
+    }
+
+    .answer-styles{
+        font-family: 'Kumbh Sans';
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 18px;
+        color: #787887;
+        margin-top: 10px;
+        display: block;
+    }
+
+    .more-info-div {
+        display: none;
+    }
+
+    .FAQ-div {
+        width: 350px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .questions-box {
+        display: flex;
+        flex-direction: column;  
+        margin-top: 19px;
+    }
+
+    .div-for-p-and-button {
+        width: 350px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .arrow-button {
+        width: 10px;
+        height: 7px;
+        border: none;
+        background-color: white;
+        transform: rotate(0deg);
+        transition-duration: 0.5s;
+    }
+
+    .arrow-button.rotate {
+        transform: rotate(180deg);
+        transition-duration: 0.5s;
+    }
+
+    .line {
+        background: #E8E8EA;
+        width: 279px;
+        height: 1px;
+        margin-top: 16px;
+        margin-bottom: 14px;
+    }
+
+}
+
+
+
